@@ -1,3 +1,0 @@
----
-                      Trust the process 
-***
