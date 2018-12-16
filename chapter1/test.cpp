@@ -21,6 +21,16 @@ int main()
     return 0;
 }
 /*
+Please input ur name:yankeli
+hello, yankeli!
+len(greeting):15
+*******************
+**               **
+* hello, yankeli! *
+**               **
+*******************
+*/
+/*
 int main()
 {
     std::cout << "whats ur name?" ;
