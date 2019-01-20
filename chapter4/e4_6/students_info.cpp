@@ -19,12 +19,11 @@ istream& read_hw(istream& in, vector<double>& hw)
 istream& read(istream& in, Student_info &s)
 {
     cout << "please enter ur name and grades and homework:";
-    //vector<double> hw1;
-    double midterm=0,finals=0,hw=0;
-    in >> s.name >> midterm >> finals >> hw;
-    //read_hw(in,hw1);
-    //s.final_grade = grade(midterm,finals,median(hw1));
-    s.final_grade = grade(midterm,finals,hw);
+    static vector<double> hw1; //note static!
+    static double midterm=0,finals=0;
+    in >> s.name >> midterm >> finals;
+    read_hw(in,hw1);
+    s.final_grade = grade(midterm,finals,median(hw1));
     return in;
 }
 
