@@ -18,7 +18,7 @@ int main(void)
         v_add.push_back(v);
     }     
     copy(v_add.begin(),v_add.end(),std::back_inserter(vec));
-    //copy(v_add.begin(),v_add.end(),vec.begin());
+    //copy(v_add.begin(),v_add.end(),vec.begin()); //note!!
     std::cout << "the result is:" << std::endl;
     for (vector<string>::iterator it1 = vec.begin();it1!=vec.end();it1++)
     {
