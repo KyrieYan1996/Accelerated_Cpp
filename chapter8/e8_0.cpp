@@ -18,12 +18,13 @@ T median(vector<T> v)
     return sz%2?v[sz/2]:(v[sz/2-1]+v[sz/2])/2;
 }
 
-template <class T>  //"no matching function for call to '_max(int, double)'",
+template <class T>  //_max(10,11.0)——"no matching function for call to '_max(int, double)'"
 
 T _max(const T& left,const T& right)
 {
     return left>right?left:right;
 }
+
 
 int main(void)
 {
